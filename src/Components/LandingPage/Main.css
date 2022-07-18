@@ -1,0 +1,26 @@
+.landing-page{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+    color: #000000;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+
+  .text-container {
+    margin-bottom: 10vh;
+  }
+
+  .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+  }
