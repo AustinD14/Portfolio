@@ -5,8 +5,8 @@ import Main from "../Components/LandingPage/Main";
 const LandingPage = () => {
   return (
     <>
-      <Main />
-      <Content1 />
+        <Main />
+        <Content1 />
     </>
   );
 };
