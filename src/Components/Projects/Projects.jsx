@@ -33,7 +33,7 @@ const Projects = () => {
         desc="React web app that fetches data of players of popular video game Dota 2. Utilizes REST API to fetch data of players from valve and display them using React hooks."
         website="https://what2ban.web.app/"
         code="https://github.com/AustinD14/what2ban"
-        stack={["React", "REST", "Firebase", "OpenDota API", "Boostrap"]}
+        stack={["React", "REST", "Firebase", "OpenDota API", "Bootstrap"]}
       />
       <Project
         title="3D file system in Unity"

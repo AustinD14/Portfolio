@@ -18,8 +18,10 @@ const Project = (props) => {
   return (
     <div className="project-item">
       <Card sx={{ maxWidth: 650 }}>
-        <Link href={website ? website : code} target="_blank">
-          {img ? <CardMedia component="img" alt={title} height="auto" image={img} /> : null}
+        <Link href={website ? website : code} target="_blank" rel="noopener">
+          {img ? (
+            <CardMedia component="img" alt={title} height="auto" image={img} />
+          ) : null}
         </Link>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
@@ -31,7 +33,7 @@ const Project = (props) => {
         </CardContent>
         <div className="footer">
           <CardActions>
-            <Link href={code}>
+            <Link href={code} target="_blank" rel="noopener">
               <Button size="small">Code</Button>
             </Link>
             {website ? (
