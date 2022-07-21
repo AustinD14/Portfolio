@@ -1,13 +1,10 @@
 import React from "react";
 import { Container } from "@mui/system";
 import "./Main.css";
-import LinkDrawer from "./LinkDrawer";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faUser } from "@fortawesome/free-regular-svg-icons";
+import LinkDrawer from "./LinkDrawer";
+import Links from "./Links";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { Drawer, Link } from "@mui/material";
 
 const Main = () => {
   const matches = useMediaQuery("(min-width:1000px)");
@@ -32,44 +29,7 @@ const Main = () => {
             </div>
           </div>
           {matches ? (
-            <div className="links">
-              <Link
-                href="https://github.com/AustinD14"
-                target="_blank"
-                underline="hover"
-                rel="noopener"
-                color="inherit"
-              >
-                <div className="link-item">
-                  <FontAwesomeIcon icon={faGithub} className="icons" />
-                  <h2>Github</h2>
-                </div>
-              </Link>
-              <Link
-                href="https://drive.google.com/file/d/1bOWrA3mYWsEmgZaphG5lTudc-a4b_fcD/view?usp=sharing"
-                target="_blank"
-                underline="hover"
-                rel="noopener"
-                color="inherit"
-              >
-                <div className="link-item">
-                  <FontAwesomeIcon icon={faUser} className="icons" />
-                  <h2>Resume</h2>
-                </div>
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/carl-austin-dimalanta-069b0118b/"
-                target="_blank"
-                underline="hover"
-                rel="noopener"
-                color="inherit"
-              >
-                <div className="link-item">
-                  <FontAwesomeIcon icon={faLinkedin} className="icons" />
-                  <h2>LinkedIn</h2>
-                </div>
-              </Link>
-            </div>
+            <Links></Links>
           ) : (
             <div className="menu">
               <LinkDrawer />
@@ -77,9 +37,8 @@ const Main = () => {
           )}
         </div>
       </Container>
-      <div className="bottom-bg">
-        <h2>see more</h2>
-      </div>
+      <div className="bottom-bg"/>
+
     </>
   );
 };

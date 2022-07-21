@@ -5,15 +5,11 @@ import Projects from "../Projects/Projects";
 
 const Content1 = () => {
   return (
-    <div className="content-1">
-      <div className="shape">
-        {/* <h1>see more</h1> */}
-      </div>
+    <div className="content-1" id="projects">
+      <div className="shape">{/* <h1>see more</h1> */}</div>
       <div>
         <Container maxWidth="xl">
-
           <div className="project-container">
-            <h1>Projects</h1>
             <div className="projects">
               <Projects />
             </div>
