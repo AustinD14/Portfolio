@@ -7,10 +7,19 @@ import RecurringImg from "../../Images/RecurringTodoList.png";
 import _3dfilesystem from "../../Images/3dfilesystem.png";
 import LAMP from "../../Images/LAMP.png";
 import Mindhive from "../../Images/mindhive2.png";
+import Portfolio from "../../Images/Portfolio.png";
 
 const Projects = () => {
   return (
     <>
+      <Project
+        title="Recurring Todo List"
+        img={Portfolio}
+        desc="This portfolio web app made with React. Made to be User friendly and responsive for all screen sizes. Makes use of MaterialUI for design and firebase for hosting."
+        website="https://portfolio-e84e2.web.app/"
+        code="https://github.com/AustinD14/Portfolio"
+        stack={["React", "MaterialUI", "Firebase"]}
+      />
       <Project
         title="Recurring Todo List"
         img={RecurringImg}
