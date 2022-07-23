@@ -4,8 +4,10 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faCaretSquareDown } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Links = () => {
+  const matches = useMediaQuery("(min-width:1000px)");
   return (
     <div className="links">
       <Link
@@ -17,7 +19,7 @@ const Links = () => {
       >
         <div className="link-item">
           <FontAwesomeIcon icon={faGithub} className="icons" />
-          <h2>Github</h2>
+          {matches ? <h2>Github</h2> : null}
         </div>
       </Link>
       <Link
@@ -29,7 +31,7 @@ const Links = () => {
       >
         <div className="link-item">
           <FontAwesomeIcon icon={faUser} className="icons" />
-          <h2>Resume</h2>
+          {matches ? <h2>Resume</h2> : null}
         </div>
       </Link>
       <Link
@@ -41,13 +43,13 @@ const Links = () => {
       >
         <div className="link-item">
           <FontAwesomeIcon icon={faLinkedin} className="icons" />
-          <h2>LinkedIn</h2>
+          {matches ? <h2>LinkedIn</h2> : null}
         </div>
       </Link>
       <Link href="#projects" underline="hover" color="inherit">
         <div className="link-item">
           <FontAwesomeIcon icon={faCaretSquareDown} className="icons" />
-          <h2>Projects</h2>
+          {matches ? <h2>Projects</h2> : null}
         </div>
       </Link>
     </div>

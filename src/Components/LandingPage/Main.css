@@ -45,7 +45,8 @@
   }
 
   .links {
-    display: none;
+    display: flex;
+    flex-direction: row;
   }
   .header h1,
   h3 {
@@ -74,7 +75,7 @@ h3 {
 
 .menu {
   position: relative;
-  bottom:5%;
+  bottom: 5%;
 }
 
 .menuBar {

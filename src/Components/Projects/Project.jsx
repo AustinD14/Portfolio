@@ -7,9 +7,12 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Link, Chip } from "@mui/material";
 import "./Projects.css";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Project = (props) => {
   const { title, desc, img, code, website, stack } = props;
+  const matches = useMediaQuery("(min-width:1650px)");
+  const cardWidth = matches ? 650 : 450;
 
   const listStack = stack.map((stack, index) => (
     <Chip key={index} label={stack} variant="outlined" size="small" />
@@ -17,7 +20,7 @@ const Project = (props) => {
 
   return (
     <div className="project-item">
-      <Card sx={{ maxWidth: 650 }}>
+      <Card sx={{ maxWidth: cardWidth }}>
         <Link href={website ? website : code} target="_blank" rel="noopener">
           {img ? (
             <CardMedia component="img" alt={title} height="auto" image={img} />

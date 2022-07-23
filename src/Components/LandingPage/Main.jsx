@@ -4,10 +4,8 @@ import "./Main.css";
 
 import LinkDrawer from "./LinkDrawer";
 import Links from "./Links";
-import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Main = () => {
-  const matches = useMediaQuery("(min-width:1000px)");
   return (
     <>
       <div className="top-bg" />
@@ -28,17 +26,10 @@ const Main = () => {
               </p>
             </div>
           </div>
-          {matches ? (
-            <Links></Links>
-          ) : (
-            <div className="menu">
-              <LinkDrawer />
-            </div>
-          )}
+          <Links />
         </div>
       </Container>
-      <div className="bottom-bg"/>
-
+      <div className="bottom-bg" />
     </>
   );
 };

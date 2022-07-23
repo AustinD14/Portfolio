@@ -13,20 +13,12 @@ const Projects = () => {
   return (
     <>
       <Project
-        title="Recurring Todo List"
+        title="Portfolio"
         img={Portfolio}
         desc="This portfolio web app made with React. Made to be User friendly and responsive for all screen sizes. Makes use of MaterialUI for design and firebase for hosting."
         website="https://portfolio-e84e2.web.app/"
         code="https://github.com/AustinD14/Portfolio"
         stack={["React", "MaterialUI", "Firebase"]}
-      />
-      <Project
-        title="Recurring Todo List"
-        img={RecurringImg}
-        desc="Todo list app for recurring tasks. A responsive web app that works specially well with mobile phones created using ReactJS and Firebase. Utilizes firebase's firestore database and realtime storage as well as google authorization."
-        website="https://recurring-todo-s.web.app/sign-in"
-        code="https://github.com/AustinD14/recurring-todo-s"
-        stack={["React", "Firestore", "Firebase"]}
       />
       <Project
         title="St Peter's Hospice Care"
@@ -44,6 +36,15 @@ const Projects = () => {
         code="https://github.com/AustinD14/what2ban"
         stack={["React", "REST", "Firebase", "OpenDota API", "Bootstrap"]}
       />
+      <Project
+        title="Recurring Todo List"
+        img={RecurringImg}
+        desc="Todo list app for recurring tasks. A responsive web app that works specially well with mobile phones created using ReactJS and Firebase. Utilizes firebase's firestore database and realtime storage as well as google authorization."
+        website="https://recurring-todo-s.web.app/sign-in"
+        code="https://github.com/AustinD14/recurring-todo-s"
+        stack={["React", "Firestore", "Firebase"]}
+      />
+
       <Project
         title="3D file system in Unity"
         img={_3dfilesystem}
